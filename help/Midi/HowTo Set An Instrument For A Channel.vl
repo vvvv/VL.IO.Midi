@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="NDddP9QysnUPikFpn2Zhw1" LanguageVersion="2019.2.0-0342-6bc9b61985" Version="0.128" IsTrusted="true">
+  <NugetDependency Id="TiBeGjEhz6dPdsyMGJscd8" Location="VL.CoreLib" Version="2019.2.0-0342-g6bc9b61985" />
+  <Patch Id="Cgm7AoMfrFYNfpW9uhf4He">
+    <Canvas Id="MigjCjN4sYYQWA7spv0gig" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="SAVuVOvPDuiMZ1XHCAvG8C">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RfxDlAkCNItMwtZD3F8uZ7">
+        <Canvas Id="Cb56io1O91iNVkxE2F6oXv" CanvasType="Group">
+          <Node Bounds="353,242,51,19" Id="R0AUr1tQ4UcOIKcSuKJFPd">
+            <p:NodeReference LastCategoryFullName="IO.Midi.Messages" LastSymbolSource="VL.IO.Midi.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="NoteOn" />
+            </p:NodeReference>
+            <Pin Id="GnLVQcNmRehNQRuQQNqEby" Name="Channel" Kind="InputPin" />
+            <Pin Id="G7GCumEcfsAQVETB6ysQF5" Name="Note Number" Kind="InputPin" />
+            <Pin Id="Adhf4MGyLqYQD6xD3u0JzQ" Name="Velocity" Kind="InputPin" />
+            <Pin Id="JSkD98SoQ5WPD5QACbayzo" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="475,344,52,19" Id="DsP9cFEOZl5ObTuiaDJILw">
+            <p:NodeReference LastCategoryFullName="IO.Midi.Messages" LastSymbolSource="VL.IO.Midi.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="NoteOff (NoteOn)" />
+            </p:NodeReference>
+            <Pin Id="OVUUOEnX1gAPbCPLQJ2hDx" Name="Note On Message" Kind="InputPin" />
+            <Pin Id="HkgZYWLGk7zMHIps44Pqbm" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="436,519,45,19" Id="PhH7jxJEQOPOsV36hit5C0">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Merge" />
+              <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="HhU6Y6VMLBvLZ0d7uR0m52" Name="Value" Kind="InputPin" />
+            <Pin Id="OS3NdgzoB4JLN1NqMnstOB" Name="Value 2" Kind="InputPin" />
+            <Pin Id="BcEbh3TJngqL4u0nb6oTQS" Name="Result" Kind="OutputPin" />
+            <Pin Id="NDP9jUYCtu7PISL0x82KUX" Name="Changed" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="353,393,79,19" Id="EcH1oA5msPPP1tJ1rBocaq">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToObservable" />
+              <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="RLHW6oQfwIPOhNOFjMkQiU" Name="Message" Kind="InputPin" />
+            <Pin Id="OWPCa6xfV4KOtuGErE8emX" Name="Send" Kind="InputPin" />
+            <Pin Id="SSmwxGEZGd3PdCsjplILO0" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="475,392,79,19" Id="HwNU1VisPsLNmrJ0jhN5by">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToObservable" />
+              <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="UG4lq0qjfgBOYlHHjWfIRy" Name="Message" Kind="InputPin" />
+            <Pin Id="R4zpHKKDHPALJyBnNyiGJH" Name="Send" Kind="InputPin" />
+            <Pin Id="QcxwBPAqDqALh9qDQJfjvh" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="435,785,52,19" Id="FxWhMGamZG4L845LiCaMMZ">
+            <p:NodeReference LastCategoryFullName="IO.Midi" LastSymbolSource="VL.IO.Midi.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MidiOut" />
+            </p:NodeReference>
+            <Pin Id="QkExzWS01zcNBht5rdrzoz" Name="Messages" Kind="InputPin" />
+            <Pin Id="IOZoiCzUiQJPUuHFa4jSDA" Name="Device" Kind="InputPin" />
+            <Pin Id="MYZcKd6YCzqO2GMsCH5jag" Name="Is Open" Kind="OutputPin" />
+          </Node>
+          <Pad Id="JszpBQqGn7tN2WyvDSNwV3" Comment="Device" Bounds="484,767,164,19" ShowValueBox="true" isIOBox="true" Value="Microsoft GS Wavetable Synth">
+            <p:TypeAnnotation LastCategoryFullName="IO.Midi" LastSymbolSource="VL.IO.Midi.vl">
+              <Choice Kind="TypeFlag" Name="MidiOutputDevice" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QUWprnNJCBgNd6k0KW98x7" Comment="Note Off" Bounds="560,320,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QVWEsYw5EIQPfVZmPg8qvD" Comment="Channel" Bounds="270,202,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="JJQMs5vorlcLA3KYX2el2H" Comment="Note Number" Bounds="378,163,35,15" ShowValueBox="true" isIOBox="true" Value="64">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="JIu2rJRY1GXLbGD4r0O6sj" Comment="Velocity" Bounds="511,202,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="430,249,57,19" Id="FSs1BbdKlT3MWNPiMLPXpU">
+            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Changed" />
+            </p:NodeReference>
+            <Pin Id="OEWRGWHcsoRLnpCVxZBF0f" Name="Value" Kind="InputPin" />
+            <Pin Id="IlKhXXP5c7FNlOkXOSvqHt" Name="Result" Kind="OutputPin" />
+            <Pin Id="R7uH7QYVoCTL1Yi3g9iXFW" Name="Unchanged" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="721,470,89,19" Id="SC3ozw001lYOQ5xR9bH3E7">
+            <p:NodeReference LastCategoryFullName="IO.Midi.Messages" LastSymbolSource="VL.IO.Midi.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ProgramChange" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="HXznrawmGmvOZb5rzKgLbf" Name="Channel" Kind="InputPin" />
+            <Pin Id="NQCkvJQxJdHORT3finp68g" Name="Program" Kind="InputPin" DefaultValue="15">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="MHzp1fVfi8DPVoJV4KAu1N" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="718,629" Id="U4CRkFgaHVNP7QjBNNExe3">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ToObservable" />
+            </p:NodeReference>
+            <Pin Id="GeKHilMM44ZMkaLHCyPNRt" Name="Message" Kind="InputPin" />
+            <Pin Id="VC1nWNJ3taWOEFeS3Lhxp4" Name="Send" Kind="InputPin" />
+            <Pin Id="KUJTBCCo1lfPzFujdve0hs" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CDqFbdLzaI1PGQBP7rdWC4" Comment="Send" Bounds="829,547,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="435,672,45,19" Id="P4fkO4Dt8ZANzCCzD8xdGA">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Merge" />
+              <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="RDWaWPIAS1LNo1h6LdfBWV" Name="Value" Kind="InputPin" />
+            <Pin Id="BZgQi98Hrh6N2io3rU1DjA" Name="Value 2" Kind="InputPin" />
+            <Pin Id="HJj43su1bu6LeWwTB2tlav" Name="Result" Kind="OutputPin" />
+            <Pin Id="BVQHaldRxkoQJ52lvfyG2g" Name="Changed" Kind="OutputPin" />
+          </Node>
+          <Pad Id="JMSfa2DLxixMraMvPeUanb" Comment="Program" Bounds="828,426,35,15" ShowValueBox="true" isIOBox="true" Value="4">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Dm1Yccpdxu0MvqoMalpSWe" Comment="Channel" Bounds="723,426,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QVkkPhCfIu6P0boSgG1Mp2" Bounds="721,219,179,19" ShowValueBox="true" isIOBox="true" Value="For a list of instruments, see:">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UQQW5UvlsQqLEnvKpazscn" Bounds="729,247,326,18" ShowValueBox="true" isIOBox="true" Value="https://www.midi.org/specifications/item/gm-level-1-sound-set">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="Abh9Bb169GCMYRigfyJHUE" Name="Create" />
+        <Patch Id="TP6FL7jaBtZOb0qwN2nPBj" Name="Update" />
+        <ProcessDefinition Id="T0O4gDfgAXgPxLdq2Bjo5n">
+          <Fragment Id="Utdf7cxfSIyNQ1SPqaZqyn" Patch="Abh9Bb169GCMYRigfyJHUE" Enabled="true" />
+          <Fragment Id="Imex1An6Dw9LxwusI7ge3O" Patch="TP6FL7jaBtZOb0qwN2nPBj" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="LHHYDYou4jZM7Vd3DEsrrX" Ids="JSkD98SoQ5WPD5QACbayzo,RLHW6oQfwIPOhNOFjMkQiU" />
+        <Link Id="QAsus5OL0Y7NzM75C9gx64" Ids="SSmwxGEZGd3PdCsjplILO0,HhU6Y6VMLBvLZ0d7uR0m52" />
+        <Link Id="OHfeFhkWSRzPUc0z0KKdbk" Ids="QcxwBPAqDqALh9qDQJfjvh,OS3NdgzoB4JLN1NqMnstOB" />
+        <Link Id="BuIb4LjmhbSMy4BsAK2cxL" Ids="JszpBQqGn7tN2WyvDSNwV3,IOZoiCzUiQJPUuHFa4jSDA" />
+        <Link Id="P6MIEnaNIcJMESpDDulyJ0" Ids="QUWprnNJCBgNd6k0KW98x7,R4zpHKKDHPALJyBnNyiGJH" />
+        <Link Id="U6KwDzZTlBlQGt3VvFzeix" Ids="JSkD98SoQ5WPD5QACbayzo,OVUUOEnX1gAPbCPLQJ2hDx" />
+        <Link Id="T0b9gJsQTy5MH0IFqjlf7d" Ids="HkgZYWLGk7zMHIps44Pqbm,UG4lq0qjfgBOYlHHjWfIRy" />
+        <Link Id="PBxaWrFYZmCLlalJv2Mzhp" Ids="QVWEsYw5EIQPfVZmPg8qvD,GnLVQcNmRehNQRuQQNqEby" />
+        <Link Id="FlZcoEyBMrbOgj6osuWHz3" Ids="JJQMs5vorlcLA3KYX2el2H,G7GCumEcfsAQVETB6ysQF5" />
+        <Link Id="LEHMvKw124KOcBhs1u0ZDv" Ids="JIu2rJRY1GXLbGD4r0O6sj,Adhf4MGyLqYQD6xD3u0JzQ" />
+        <Link Id="OpcI3PbMwqlPz8x3HFzigI" Ids="JJQMs5vorlcLA3KYX2el2H,OEWRGWHcsoRLnpCVxZBF0f" />
+        <Link Id="OyA66NTuOBzOvHo9vXllVV" Ids="IlKhXXP5c7FNlOkXOSvqHt,OWPCa6xfV4KOtuGErE8emX" />
+        <Link Id="MdslQYljGWpPQfsyLrIAVq" Ids="CDqFbdLzaI1PGQBP7rdWC4,VC1nWNJ3taWOEFeS3Lhxp4" />
+        <Link Id="J9xYem6daWPOchfZj8fVSk" Ids="BcEbh3TJngqL4u0nb6oTQS,RDWaWPIAS1LNo1h6LdfBWV" />
+        <Link Id="UOoQ7waGRoeQARUnIQ2nLC" Ids="KUJTBCCo1lfPzFujdve0hs,BZgQi98Hrh6N2io3rU1DjA" />
+        <Link Id="JtZegWjlX4TMDFruTBI46x" Ids="HJj43su1bu6LeWwTB2tlav,QkExzWS01zcNBht5rdrzoz" />
+        <Link Id="A0vxyekaE34OZVc9bjLV56" Ids="MHzp1fVfi8DPVoJV4KAu1N,GeKHilMM44ZMkaLHCyPNRt" />
+        <Link Id="PpubE7EEfbBPWLYNMtKzJK" Ids="JMSfa2DLxixMraMvPeUanb,NQCkvJQxJdHORT3finp68g" />
+        <Link Id="NiCDMlbsSgPOGFdSFgOywr" Ids="Dm1Yccpdxu0MvqoMalpSWe,HXznrawmGmvOZb5rzKgLbf" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="ULKVJ90Ab3vOEkYHWxty9j" Location="VL.IO.Midi" Version="2019.2.0-0342-g6bc9b61985" />
+</Document>

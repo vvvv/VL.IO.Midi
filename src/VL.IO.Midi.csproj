@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>VL.Lib.IO.Midi</RootNamespace>
+    <VLPackageBasePath>..\</VLPackageBasePath>
+    <PackageId>VL.IO.Midi</PackageId>
+    <Description>Provides Midi support for VL</Description>
+    <PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
+    <PackageTags>VL, note, sysex, channel, controller, message, clock</PackageTags>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\lib\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\lib\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Sanford.Multimedia.Midi" Version="6.6.2" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
+    <PackageReference Include="VL.CoreLib" Version="2020.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Management" />
+  </ItemGroup>
+</Project>
