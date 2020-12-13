@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.Midi</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>VL.IO.Midi</title>
     <authors>vvvv, Leslie Sanford</authors>
     <owners>vvvv</owners>
@@ -21,6 +21,7 @@
   </metadata>
   <files>
 	<file src="..\lib\net472\VL.IO.Midi.dll" target="lib\net472" exclude="" />
+	<file src="..\lib\net472\System.Reactive.dll" target="lib\net472" exclude="" />
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
 	<file src="nugeticon.png" target="icon\" />
