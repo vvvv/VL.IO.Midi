@@ -17,7 +17,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Sanford.Multimedia.Midi" Version="6.6.2" />
-    <PackageReference Include="System.Reactive" Version="5.0.0" />
     <PackageReference Include="VL.CoreLib" Version="2020.2.1" />
   </ItemGroup>
   <ItemGroup>
