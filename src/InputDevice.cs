@@ -153,7 +153,7 @@ namespace VL.Lib.IO.Midi
                 var midiInDevice = new InputDevice(id, false);
                 return new InputDeviceMidiEvents(midiInDevice);
             })
-            .ShareInParallel(delayDisposalInMilliseconds: 250);
+            .ShareInParallel();
         }
     }
 
