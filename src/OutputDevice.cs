@@ -118,29 +118,19 @@ namespace VL.Lib.IO.Midi
             if (observable != FObservable)
             {
                 FInputCompleted = true;
-                FSubscribing = true;
-                //FSubscription.Disposable?.Dispose();
                 FSubscription.Disposable = null;
                 FObservable = observable;
 
-
-                try
+                if (observable != null && observable != observableDefaultHack && !(observable is DefaultMidiObservable))
                 {
-                    if (observable != null && observable != observableDefaultHack && !(observable is DefaultMidiObservable))
-                    {
-                        EnsureDeviceOpen();
-                        FInputCompleted = false;
-                        FSubscription.Disposable = observable.Subscribe(
-                            OnNext,
-                            _ => FInputCompleted = true,
-                            () => FInputCompleted = true);
+                    EnsureDeviceOpen();
+                    FInputCompleted = false;
+                    FSubscription.Disposable = observable.Subscribe(
+                        OnNext,
+                        _ => FInputCompleted = true,
+                        () => FInputCompleted = true);
 
-                    }
-                }
-                finally
-                {
-                    FSubscribing = false;
-                }               
+                }            
             }
         }
 

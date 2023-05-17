@@ -12331,6 +12331,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="QDfG1Et28i4LaS4F6oEyb1" Location="VL.CoreLib" Version="2019.2.0-0342-g6bc9b61985" />
-  <PlatformDependency Id="H0G3Yckul1VNSS3M1ACl9K" Location="C:/Dev/vvvv/vvvv/public-vl/VL.IO.Midi/src/bin/Debug/VL.IO.Midi.dll" IsForward="true" />
-  <PlatformDependency Id="FuxbIDfP4LhO3wurfmqvo8" Location="./src/bin/Debug/net472/Sanford.Multimedia.Midi.dll" />
+  <PlatformDependency Id="H0G3Yckul1VNSS3M1ACl9K" Location="./lib/net6.0/VL.IO.Midi.dll" IsForward="true" />
+  <PlatformDependency Id="FuxbIDfP4LhO3wurfmqvo8" Location="Sanford.Multimedia.Midi.dll" />
 </Document>

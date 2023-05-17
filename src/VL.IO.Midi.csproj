@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>VL.Lib.IO.Midi</RootNamespace>
     <VLPackageBasePath>..\</VLPackageBasePath>
     <PackageId>VL.IO.Midi</PackageId>
@@ -17,7 +17,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Sanford.Multimedia.Midi" Version="6.6.2" />
-    <PackageReference Include="VL.CoreLib" Version="2020.2.1" />
+    <PackageReference Include="VL.CoreLib" Version="2023.5.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Management" />
