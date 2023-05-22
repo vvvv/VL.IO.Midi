@@ -40,12 +40,20 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="679,619,116,19" Id="H8OyIo5uq73NlrxKFb3sCt">
+          <Node Bounds="647,557,116,19" Id="H8OyIo5uq73NlrxKFb3sCt">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="MIDIControllerModule.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MidiControllerModule" />
             </p:NodeReference>
-            <Pin Id="PUo11cWw1JiLx3cAX8HAWO" Name="Model Stream" Kind="InputPin" />
+            <Pin Id="PUo11cWw1JiLx3cAX8HAWO" Name="Model" Kind="InputPin">
+              <p:DefaultValue>
+                <Item Binding_Type="Receive" Channel_Path="d" Controller_Number="3" />
+                <Item Binding_Type="Receive" Channel_Path="a" />
+                <Item Binding_Type="Receive" Channel_Path="b" Controller_Number="1" />
+                <Item Binding_Type="Receive" Channel_Path="c" Controller_Number="2" />
+              </p:DefaultValue>
+            </Pin>
+            <Pin Id="T2JbqVli3oVPGYm91DdVUT" Name="Update" Kind="InputPin" />
           </Node>
           <Node Bounds="196,627,60,26" Id="QLeTZcsyU37Lg5hwL5ofqN">
             <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
@@ -145,18 +153,6 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="665,-52,45,19" Id="Hdo5nuZoGaWPEqtfqYahKF">
-            <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="LFO" />
-            </p:NodeReference>
-            <Pin Id="Bm59EMzc618MNdd81EGGYm" Name="Period" Kind="InputPin" DefaultValue="24.35" />
-            <Pin Id="Sx3rsr9SOPVNkKd4CHMIWK" Name="Pause" Kind="InputPin" />
-            <Pin Id="SMPikQUeaKpOpwTQVyIlVh" Name="Reset" Kind="ApplyPin" />
-            <Pin Id="F9Z2OH6Y4H9PHp5xPALqSv" Name="Phase" Kind="OutputPin" />
-            <Pin Id="MGMw4tpSG9EPDY1x1zLcMb" Name="On New Cycle" Kind="OutputPin" />
-            <Pin Id="APtHuH15VJjQETefB9yBPo" Name="Cycles" Kind="OutputPin" />
-          </Node>
           <Pad Id="CefIUmTWetkQYfRaMltgKS" Comment="" Bounds="892,255,169,29" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />

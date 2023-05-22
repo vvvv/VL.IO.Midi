@@ -111,7 +111,7 @@
                   <Pin Id="C837NcgevJQP7s4rdTxxkN" Name="Due Time" Kind="InputPin" />
                   <Pin Id="Ud2UBjz5rFfOh5swPGBhTz" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Pad Id="BRwDqRqaxwwLbzliyoz8yc" Comment="" Bounds="290,237,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+                <Pad Id="BRwDqRqaxwwLbzliyoz8yc" Comment="" Bounds="290,237,35,15" ShowValueBox="true" isIOBox="true" Value="0.5">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="Float64" />
                   </p:TypeAnnotation>
