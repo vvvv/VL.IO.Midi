@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.1-0061-g8f4e24c6da" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.1-0071-g870262b024" Version="0.128">
   <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.1-0059-g8adb3ebf6c" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -40,17 +40,17 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="647,557,116,19" Id="H8OyIo5uq73NlrxKFb3sCt">
+          <Node Bounds="635,537,116,19" Id="H8OyIo5uq73NlrxKFb3sCt">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="MIDIControllerModule.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MidiControllerModule" />
             </p:NodeReference>
             <Pin Id="PUo11cWw1JiLx3cAX8HAWO" Name="Model" Kind="InputPin">
               <p:DefaultValue>
-                <Item Binding_Type="Receive" Channel_Path="d" Controller_Number="3" />
                 <Item Binding_Type="Receive" Channel_Path="a" />
                 <Item Binding_Type="Receive" Channel_Path="b" Controller_Number="1" />
                 <Item Binding_Type="Receive" Channel_Path="c" Controller_Number="2" />
+                <Item Binding_Type="Receive" Channel_Path="d" Controller_Number="3" />
               </p:DefaultValue>
             </Pin>
             <Pin Id="T2JbqVli3oVPGYm91DdVUT" Name="Update" Kind="InputPin" />
