@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="JzJFIntts4AMlaOlsmHyRh" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2023.5.1-0054-ge230240834" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="JzJFIntts4AMlaOlsmHyRh" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2023.5.1" Version="0.128">
   <Patch Id="FJUD6XwvfuGOUZkA4Jsm1z">
     <Canvas Id="EH0gMHHDTvcLTHDdd7HMcp" DefaultCategory="IO.Midi" CanvasType="FullCategory">
       <Canvas Id="BXjX8YN2yYSM4HUzubaUWB" Name="Messages" Position="259,695">
@@ -11814,4 +11814,5 @@
   <NugetDependency Id="QDfG1Et28i4LaS4F6oEyb1" Location="VL.CoreLib" Version="2019.2.0-0342-g6bc9b61985" />
   <PlatformDependency Id="H0G3Yckul1VNSS3M1ACl9K" Location="./lib/net6.0/VL.IO.Midi.dll" IsForward="true" />
   <PlatformDependency Id="FuxbIDfP4LhO3wurfmqvo8" Location="Sanford.Multimedia.Midi.dll" />
+  <DocumentDependency Id="CzvzsICN46pOrcXBCewuvm" Location="./MIDIControllerModule.vl" IsForward="true" />
 </Document>
