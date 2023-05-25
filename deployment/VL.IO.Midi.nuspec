@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.Midi</id>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <title>VL.IO.Midi</title>
-    <authors>vvvv, Leslie Sanford</authors>
+    <authors>vvvv, Leslie Sanford, Randall Vazquez</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.IO.Midi</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
