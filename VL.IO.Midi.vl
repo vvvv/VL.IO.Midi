@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="JzJFIntts4AMlaOlsmHyRh" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2023.5.1" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="JzJFIntts4AMlaOlsmHyRh" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2023.5.2-0004-ge2a13951a5" Version="0.128">
   <Patch Id="FJUD6XwvfuGOUZkA4Jsm1z">
     <Canvas Id="EH0gMHHDTvcLTHDdd7HMcp" DefaultCategory="IO.Midi" CanvasType="FullCategory">
       <Canvas Id="BXjX8YN2yYSM4HUzubaUWB" Name="Messages" Position="259,695">
@@ -6562,7 +6562,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="TGUkxAMcs7uLpnwT1KT4Dc" Name="MIDI Channel" Kind="InputPin" Bounds="673,315" />
-            <Pin Id="F3ELXYSYVV4LQQgzadp2F2" Name="Controller Number" Kind="InputPin" />
+            <Pin Id="F3ELXYSYVV4LQQgzadp2F2" Name="Controller" Kind="InputPin" />
             <Pin Id="KJrt1aD1ggDOgDDhRZmJUV" Name="Result" Kind="OutputPin" />
             <Pin Id="AeirX8dsBQ6P5UyMQUWWgX" Name="On Data" Kind="OutputPin" />
           </Patch>
