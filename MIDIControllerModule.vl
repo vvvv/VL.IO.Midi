@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="M9dWAzkiLFaOBsdAafTlsS" LanguageVersion="2023.5.3-0158-g87e4ee264c" Version="0.128">
-  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0158-g87e4ee264c" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="M9dWAzkiLFaOBsdAafTlsS" LanguageVersion="2024.6.0-0244-ga4b76baedd" Version="0.128">
+  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2024.6.0-0244-ga4b76baedd" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
-    <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.Midi.Modules" CanvasType="FullCategory">
+    <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.Midi.Modules.Experimental" CanvasType="FullCategory">
       <!--
 
     ************************ MidiControllerModule ************************
@@ -821,6 +821,7 @@
                   <Pin Id="LxpmQLosvwyNNg8vNEP6dR" Name="Key" Kind="InputPin" />
                   <Pin Id="BOV8sQ80efnNbJk7h6FosA" Name="Type Of Values" Kind="InputPin" />
                   <Pin Id="DyfkU7URL89QL4lQCvSuMW" Name="Result" Kind="OutputPin" />
+                  <Pin Id="VfnHPFxj8kOP44AW25AghY" Name="Got Created" Kind="OutputPin" />
                 </Node>
                 <Link Id="IODEd9kYIMaPVgzwiKuPlm" Ids="DvVKWvVyzhhMLIjmeDq0p2,EB4uNKAKYdtML9tBvWyHku" />
                 <Link Id="R9NYsgoSCaKMlQMvxg6O8p" Ids="BPENCioHZcUNLg09O7L0dx,HZBBmMWIvcoPNbcgus7AKE" />
