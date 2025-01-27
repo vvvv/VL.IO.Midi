@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2025.7.0-0032-g78ac44060f" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2025.7.0-0036-g39464a959d" Version="0.128">
   <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.1-0059-g8adb3ebf6c" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -26,6 +26,7 @@
               </p:DefaultValue>
             </Pin>
             <Pin Id="VFprtTk5C3XMtGzoXS8yEH" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KhikDTtefGVNHkgb67TqrO" Name="Log" Kind="InputPin" DefaultValue="True" />
             <Pin Id="T2JbqVli3oVPGYm91DdVUT" Name="Update" Kind="InputPin" />
           </Node>
           <Pad Id="MpjaxZLS26dNVHreKCGIwf" Comment="" Bounds="245,400,82,27" ShowValueBox="true" isIOBox="true">
@@ -66,6 +67,37 @@
             <Pin Id="IqPk0Ku7My0NPSrXiGQwxY" Name="Log Level" Kind="InputPin" />
             <Pin Id="QCq79jYFkQcNKml6RbihEl" Name="Category" Kind="InputPin" />
           </Node>
+          <Node Bounds="349,309,45,19" Id="JV3fn8E8sewPCID2rpqkPX">
+            <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LFO" />
+            </p:NodeReference>
+            <Pin Id="LoZ09gkA0YiMMSMeRmAndi" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="EsRZYj1HnzYP5InsSj8e4g" Name="Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="D3R4UyMLCIoPR5F2XBkByC" Name="New Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IGzqvWA3YO3LMcBLyW9HkW" Name="Period" Kind="InputPin" DefaultValue="60" />
+            <Pin Id="SrugSrjMPhhLZJBr0I4Z46" Name="Pause" Kind="InputPin" />
+            <Pin Id="Ppe5xV4TXHtQXJYovHcAat" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="E9HrJBsnxzBM5Nr0WCXfiM" Name="Phase" Kind="OutputPin" />
+            <Pin Id="Baiy3IOVK6XQCzG9V874fh" Name="On New Cycle" Kind="OutputPin" />
+            <Pin Id="OsMfCfRnnwOPxtxpJ4tfwz" Name="Cycles" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RYSV5qDY7KDOy6JMbkpcuS" Comment="Log" Bounds="204,146,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BRVLt2eqw93LOr6CFQbeQ1" Comment="Pause" Bounds="377,271,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="CPjqaGO113jPocorJ7hdE9" Name="Create" />
         <Patch Id="F4CiIuwbKLVQCMVruCdLWc" Name="Update" />
@@ -75,7 +107,9 @@
         </ProcessDefinition>
         <Link Id="HxgbfxO72JdLhX9aJSN1O4" Ids="JzEDMQ8aOK0N4v5RYUijZK,MpjaxZLS26dNVHreKCGIwf" />
         <Link Id="PD67XiY8s91LburoSKfFv8" Ids="SIdRjU51khSQCoXY3UQOso,RdhBSl7XiBkNd3tyVya2KE" />
-        <Link Id="EUknPzJksmWODE583Pfiqu" Ids="NTR4jp6PhMRLH3YPRWmTEk,PscE6q6QObhOcffZGitc1c" />
+        <Link Id="VO3dbFnDTUqMEkmmahqQ9v" Ids="E9HrJBsnxzBM5Nr0WCXfiM,SBXvG7LXE4IOBmwau2gEaU" />
+        <Link Id="GqJ7WzOPDhxO8OEUJMIOU3" Ids="RYSV5qDY7KDOy6JMbkpcuS,KhikDTtefGVNHkgb67TqrO" />
+        <Link Id="SHSEIHMonY8NkiN80ma0LI" Ids="BRVLt2eqw93LOr6CFQbeQ1,SrugSrjMPhhLZJBr0I4Z46" />
       </Patch>
     </Node>
   </Patch>
