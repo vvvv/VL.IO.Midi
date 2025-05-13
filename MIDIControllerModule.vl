@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Jynpo0iYAYaNdMJ3Fwpxdi" LanguageVersion="2025.7.0-0041-g070930f94a" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Jynpo0iYAYaNdMJ3Fwpxdi" LanguageVersion="2025.7.0-0330-g5dd8d818f6" Version="0.128">
   <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2024.6.0-0244-ga4b76baedd" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.Midi.Modules.Experimental" CanvasType="FullCategory">
@@ -26,7 +26,7 @@
               </p:TypeAnnotation>
             </Pad>
             <ControlPoint Id="RZY9lMEOHEqNWxDkLJnmUm" Bounds="900,132" />
-            <Pad Id="BqgtKCroLQMOoPUmOl1K7n" Comment="" Bounds="900,85,109,15" ShowValueBox="true" isIOBox="true" Value="MIDI Controller">
+            <Pad Id="BqgtKCroLQMOoPUmOl1K7n" Comment="" Bounds="900,85,109,15" ShowValueBox="true" isIOBox="true" Value="MIDI">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -221,6 +221,7 @@
               <Pin Id="KcBsWPx0OUmLnqcPcJmU0p" Name="Node Context" Kind="InputPin" />
               <Pin Id="S6zkIcFCysZNh08419xzfg" Name="Save on Exit Action" Kind="InputPin" />
               <Pin Id="VZlHEjoefyCOr6uAjfNx7B" Name="Enabled" Kind="InputPin" />
+              <Pin Id="BUILo42BgQPLEzQFYFCpqy" Name="Output" Kind="OutputPin" IsHidden="true" />
             </Node>
             <ControlPoint Id="JPTWPz25znOPZBzIXrUlyT" Bounds="245,143" />
             <ControlPoint Id="TO4LQMA6eO2MLVKuRsHtlu" Bounds="273,249" />
@@ -512,6 +513,7 @@
                   <Pin Id="HPQLD6FhJUKPbPMh7u1HIM" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="KLefN6bXP4KL6FQhnVVE1o" Name="Messages" Kind="InputPin" />
                   <Pin Id="CUAZu2aOG0gMm4YRo6FkUx" Name="Device" Kind="InputPin" DefaultValue="Midi Fighter Twister" />
+                  <Pin Id="GxOhm05wFfhOB7318nKzNx" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="BzJOWqWo0MvPX4ae84zdgE" Name="Is Open" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="784,933,334,207" Id="PJzWZRt4PPyN7IkWNl9RjO">
@@ -610,6 +612,7 @@
                   <Pin Id="LRpwQARxLGbPubmtW5NvQj" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="DwZjCRJHPX8L7pSw1W0MvA" Name="Messages" Kind="InputPin" />
                   <Pin Id="LGTwIhCdcsSNA3r49bF4su" Name="Reset" Kind="InputPin" />
+                  <Pin Id="RG4bfZZ9OynLuDpIFikCCh" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="IPBftmNSEYjNbySX0gBv00" Name="Result" Kind="OutputPin" />
                   <Patch Id="LIYMZ6qCR7rNaqm2kJfz3i" ManuallySortedPins="true">
                     <Patch Id="OrLIJSNvh7dOtSoFwSSFNy" Name="Create" ParticipatingElements="PvF0JffVqxbPKqqi01iEHy,LBQ4mGVEQtxOCSM1pvZ75k" ManuallySortedPins="true" />
@@ -729,6 +732,7 @@
                   </p:NodeReference>
                   <Pin Id="ORjm0aWif0kNE38ODIZ9pv" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="B9jQKMBNQSDPwhUkaXpBze" Name="Device" Kind="InputPin" />
+                  <Pin Id="PhyftzVBzX8NMt8UyeHdG4" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="RQX38aBoGt9MD0SB9DF0NY" Name="Result" Kind="OutputPin" />
                   <Pin Id="NS38jxe7ycQONDjQmKZaVC" Name="Is Open" Kind="OutputPin" />
                 </Node>
