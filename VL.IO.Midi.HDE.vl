@@ -1186,6 +1186,12 @@
               <Pin Id="J0o296F9OXZLSN7ULS26Am" Name="Apply" Kind="InputPin" />
               <Pin Id="Axqs3aecVatMFs38jfxb69" Name="Output" Kind="StateOutputPin" />
             </Node>
+            <ControlPoint Id="QeOSRNYz3YUOy73ZQzna1Z" Bounds="1006,430" />
+            <Pad Id="TfxJHEbk1yAOSMF8eB4y14" Comment="Interface Version" Bounds="1006,370,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
           <ProcessDefinition Id="Su8j5D8Yfm0Oygk0yMVRIQ" IsHidden="true">
             <Fragment Id="HIyFMtcdjdEP809ujiTQbN" Patch="AUDbm9UTVDtPsTsx61NPpu" Enabled="true" />
@@ -1193,6 +1199,7 @@
             <Fragment Id="P7GCXV160kZPWHTSQUD12f" Patch="L4uKoLfvq33LZN0wV7RJ8b" />
             <Fragment Id="A6bI6xvtFVuOb1hTeN5g4A" Patch="SQjgh3UfsD3MlgG65DwOdE" />
             <Fragment Id="GQxBciLhisyOWxmyDoAhMy" Patch="KsC2JuvQMNILe9SNylYRCm" />
+            <Fragment Id="OlwA34Si0n7LXooaCmqA9c" Patch="GCDKItJC5SrNjc9U4E92Bg" />
           </ProcessDefinition>
           <Link Id="D1TajYnzZNhP0STqzeqM4N" Ids="P2aUxrEFRIcLPkrFZdSnkL,EvHgZKNbqnwLZSc7x7F5PQ" />
           <Link Id="FEo4i6P72ZJOdHJ7JmVLO7" Ids="EvHgZKNbqnwLZSc7x7F5PQ,EpKpY1fSi3sONEsAW39ePu" IsHidden="true" />
@@ -1281,6 +1288,11 @@
             <Pin Id="HPps7kbVU0dPRT5K6h7sTc" Name="Controller Number" Kind="InputPin" />
             <Pin Id="BGr6OwEBHnBMKyYc7WoaJZ" Name="Channel Path" Kind="InputPin" Bounds="1339,916" />
           </Patch>
+          <Patch Id="GCDKItJC5SrNjc9U4E92Bg" Name="InterfaceVersion">
+            <Pin Id="KaAbseKkCEBNcS5HcrW9aB" MergeId="504390" Name="Interface Version" Kind="OutputPin" />
+          </Patch>
+          <Link Id="E7jc4E75sdsNufFoaA6Qi3" Ids="QeOSRNYz3YUOy73ZQzna1Z,KaAbseKkCEBNcS5HcrW9aB" IsHidden="true" />
+          <Link Id="DF65Jp8wEFiL7YdyBTCDQX" Ids="TfxJHEbk1yAOSMF8eB4y14,QeOSRNYz3YUOy73ZQzna1Z" />
         </Patch>
       </Node>
       <!--
