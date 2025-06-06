@@ -8,6 +8,15 @@ using VL.Lib.Primitive;
 
 namespace VL.Lib.IO.Midi
 {
+    public enum ChannelMessageType { 
+        NoteOn = 144, 
+        NoteOff = 128, 
+        MonoPressure = 208, 
+        PolyPressure = 160, 
+        ProgramChange = 192, 
+        PitchBend = 224, 
+        ControlChange = 176 };
+
     public class MessageSplitter : MidiObservable
     {
         public static readonly MessageSplitter Default = new MessageSplitter(null);
