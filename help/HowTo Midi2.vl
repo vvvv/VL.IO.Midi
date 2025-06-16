@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="O8FsJu525xrOJJFbv4P8fQ">
         <Canvas Id="HtOCMXif5MwOdoqzwWbCMa" CanvasType="Group">
-          <Node Bounds="271,470,125,19" Id="QTWLawK2MVXPRPaPd1rMLu">
+          <Node Bounds="271,470,145,19" Id="QTWLawK2MVXPRPaPd1rMLu">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="callmenames-2025-06-02.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="Midi" />
@@ -24,10 +24,10 @@
             <Pin Id="P9yzDhCgoaeNERijRku6QM" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="NhZLGsfCju6MlOpG42i6Ii" Name="Model" Kind="InputPin">
               <p:DefaultValue r:Type="Spread [Collections]&lt;BindingModel [IO.Midi]&gt;" xmlns:r="reflection" r:Version="2">
-                <Item Channel_Path="MidiTester" />
+                <Item Channel_Path="MidiTester" Midi_Channel="1" Midi_Data1="36" Midi_Message_Type="NoteOn" />
               </p:DefaultValue>
             </Pin>
-            <Pin Id="A3uadi2uoPVNSYP3cTPEfj" Name="Nickname" Kind="InputPin" DefaultValue="midinick" />
+            <Pin Id="A3uadi2uoPVNSYP3cTPEfj" Name="Nickname" Kind="InputPin" DefaultValue="Main Keys" />
             <Pin Id="VvUuIWzAXi4OZ7VG8BaeXe" Name="Input Device" Kind="InputPin" DefaultValue="USB Keystation 49e" />
             <Pin Id="SQqWYF3ZGM8Nvb10I2KftU" Name="Input Enabled" Kind="InputPin" />
             <Pin Id="NgElCaoA1l7LpLwfEZyYNI" Name="State Output" Kind="OutputPin" />
@@ -37,6 +37,7 @@
             <Pin Id="N45VfiPIVqZOfswbeE2uDh" Name="Output Device" Kind="InputPin" DefaultValue="Microsoft GS Wavetable Synth" />
             <Pin Id="Bfn8oWiiS0fPfVn5N9zoPT" Name="Output Enabled" Kind="InputPin" />
             <Pin Id="Ro2xHYWXAmvQCEDeGfNZh5" Name="Direction" Kind="InputPin" DefaultValue="Receive" />
+            <Pin Id="JYkp3FGhQEcPqGmwGlmgbE" Name="Log" Kind="InputPin" />
           </Node>
           <Pad Id="MVxrSDW8fHAQH73H3vk0GP" Comment="Output Connection" Bounds="300,541,60,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="271,769,58,26" Id="Unip3UyMNXJPLJlrlYcgwp">
