@@ -269,7 +269,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QDzTKIBef4bOarSOmZK9XW" Bounds="877,94,336,169" ShowValueBox="true" isIOBox="true" Value="- connect to int, byte, float, bool&#xD;&#xA;- No more bindings of this type can be found&#xD;&#xA;- OK button is cut off&#xD;&#xA;- Log (Channel) needs Apply input&#xD;&#xA;- Cleanup Logging of MidiBinding&#xD;&#xA;&#xD;&#xA;- Learn button in column&#xD;&#xA;- Indicator to show that non-default options apply">
+          <Pad Id="QDzTKIBef4bOarSOmZK9XW" Bounds="877,94,372,196" ShowValueBox="true" isIOBox="true" Value="- No more bindings of this type can be found&#xD;&#xA;- OK button is cut off&#xD;&#xA;&#xD;&#xA;- Cleanup Logging of MidiBinding&#xD;&#xA;&#xD;&#xA;- Log (Channel) needs Apply input&#xD;&#xA;- Learn button in column&#xD;&#xA;- Indicator to show that non-default options apply&#xD;&#xA;&#xD;&#xA;- connect to int, byte, float, bool&#xD;&#xA;- Shoud midi node get channel/messagetype/data1 filter?">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
