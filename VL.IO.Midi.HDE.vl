@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SdVSPN0SORmPLYzCFV143y" LanguageVersion="2025.7.0-0405-g65f51ab1b8" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SdVSPN0SORmPLYzCFV143y" LanguageVersion="2025.7.0-0409-g7999180e22" Version="0.128">
   <NugetDependency Id="I8QQd3d6IwrPHKZpya237S" Location="VL.CoreLib" Version="2023.5.1-0059-g8adb3ebf6c" />
   <Patch Id="NFmLzJZSFpnQJ1Wsryp0ze">
     <Canvas Id="Sy6K0E9lhbSPdxrL0FnkFq" DefaultCategory="IO.Midi.Modules" CanvasType="FullCategory">
@@ -1623,7 +1623,7 @@
           <Link Id="FKMnqsKd4JBMdOj6eA6iur" Ids="QUpKlXbuVeJL2EKj0lht5T,NpTBpgrpnfILRusB7XzegA" IsHidden="true" />
           <Slot Id="D0LGch5cB4fO5zQNjICgNQ" Name="Module">
             <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="Midi" />
+              <Choice Kind="TypeFlag" Name="MIDI" />
             </p:TypeAnnotation>
           </Slot>
           <Link Id="JPeXnRd3CpbNJrIKNILsp6" Ids="NpTBpgrpnfILRusB7XzegA,U5tZwsKfqk5O5MwNWmUzw3" />
@@ -2515,11 +2515,6 @@
                   <Pin Id="Onv8jXdZHRmNMiHTSNFGA0" Name="Value" Kind="InputPin" />
                   <Pin Id="Q60AkEnBp8wQAzTs5bHjsL" Name="Value 2" Kind="InputPin" />
                 </Patch>
-                <!--
-
-    ************************  ************************
-
--->
                 <ProcessDefinition Id="D2dxPMGBFAWQHZB9YaAgil">
                   <Fragment Id="AweMZYZZhweOSJCSbhQ75k" Patch="MD8FoLVVE7tOPPNv5r6aLI" Enabled="true" />
                   <Fragment Id="Cg4a8rcNq4aNA0IWb2V6Kr" Patch="G7jBEkBKzsNLnyyemEvmZq" Enabled="true" />
@@ -2578,7 +2573,7 @@
           <Link Id="G0V95p1UoNsLl5zhd9enBh" Ids="DDKdnHPY6kQPR8YkF1cnvt,UBoC0mUH7dRPOmIdrTlfWK" />
           <Slot Id="SuotckWMcYIObWMkxNyDNe" Name="Module">
             <p:TypeAnnotation p:Type="TypeReference">
-              <Choice Kind="TypeFlag" Name="Midi" />
+              <Choice Kind="TypeFlag" Name="MIDI" />
             </p:TypeAnnotation>
           </Slot>
           <Link Id="IRcmUK7GuaDLAXSBcIserH" Ids="S2iROjTJBoTMLNRpzF3rcL,GHMXmT5D7mINKHnvjAJCdF" IsHidden="true" />
