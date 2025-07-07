@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UuOF5GIp0NVMeqwSiW6l43" LanguageVersion="2025.7.0-0409-g7999180e22" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="UuOF5GIp0NVMeqwSiW6l43" LanguageVersion="2025.7.0-0410-gbe81663f6d" Version="0.128">
   <NugetDependency Id="SKLNQVfmuYYMk70XvfHymv" Location="VL.CoreLib" Version="2025.7.0-0360-g908a776915" />
   <Patch Id="FbH2itTZPkOLJbHcg75vFI">
     <Canvas Id="AjaSczihyLcLbvQX4iX9KS" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -24,7 +24,7 @@
             <Pin Id="P9yzDhCgoaeNERijRku6QM" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="NhZLGsfCju6MlOpG42i6Ii" Name="Model" Kind="InputPin">
               <p:DefaultValue r:Type="Spread [Collections]&lt;BindingModel [IO.Midi]&gt;" xmlns:r="reflection" r:Version="2">
-                <Item Channel_Path="MidiTester" Direction="Receive" Midi_Channel="16" Midi_Data1="1" Midi_Message_Type="NoteOn" />
+                <Item Channel_Path="MidiTester" Midi_Channel="1" Midi_Data1="0" Midi_Message_Type="ControlChange" />
               </p:DefaultValue>
             </Pin>
             <Pin Id="A3uadi2uoPVNSYP3cTPEfj" Name="Nickname" Kind="InputPin" DefaultValue="Main Keys" />
@@ -211,7 +211,6 @@
             <Pin Id="NYnU605nOTfQA9m5IsCS6p" Name="Input" Kind="InputPin" />
             <Pin Id="MG3rgkMmzYaPTlohl6FWEj" Name="Input 2" Kind="InputPin" />
             <Pin Id="Borh38ZIR1dLwPL862By1Z" Name="Result" Kind="OutputPin" />
-            <Pin Id="JwYRdrp2ZfiPPqCKh7o2UM" Name="Input 3" Kind="InputPin" />
           </Node>
           <Node Bounds="897,710,61,26" Id="Upu8TVwRHvrQAVFkCeMdpQ">
             <p:NodeReference LastCategoryFullName="VL.Core.EditorAttributes.MinAttribute" LastDependency="VL.Core.dll">
@@ -231,15 +230,6 @@
             <Pin Id="ONwnH6hogMUMln9RIP2bBJ" Name="Value" Kind="InputPin" />
             <Pin Id="PL5vRrz6EOWLNVnEkNfz3q" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="1081,710,67,26" Id="St4pOUsbpRhOdXEz3oKRTU">
-            <p:NodeReference LastCategoryFullName="System.EditorAttributes.LabelAttribute" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="ClassType" Name="LabelAttribute" />
-              <Choice Kind="OperationCallFlag" Name="Create" />
-            </p:NodeReference>
-            <Pin Id="BMCHKSp2U7UN9dwiFmj7Ei" Name="Label" Kind="InputPin" DefaultValue="foo" />
-            <Pin Id="BSQZ2mEjXzpO8kTs8RHtMn" Name="Output" Kind="StateOutputPin" />
-          </Node>
           <Pad Id="G7UoN6PrCjrM5XxJbKX6L1" Comment="" Bounds="899,675,35,15" ShowValueBox="true" isIOBox="true" Value="5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
@@ -248,11 +238,6 @@
           <Pad Id="TUuClYMN1w8M3HczBH7neB" Comment="" Bounds="985,675,35,15" ShowValueBox="true" isIOBox="true" Value="1000">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="EcxesQwQ7osMSfn05PEmyK" Comment="Label" Bounds="1083,675,35,15" ShowValueBox="true" isIOBox="true" Value="k">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="AiLraJCFDihOF6GABLMP2d" Comment="Direction" Bounds="1054,1049,97,15" ShowValueBox="true" isIOBox="true" Value="SendAndReceive">
@@ -374,10 +359,8 @@
         <Link Id="AnQoQxVP9nqMS8KaoXNLMG" Ids="PL5vRrz6EOWLNVnEkNfz3q,MG3rgkMmzYaPTlohl6FWEj" />
         <Link Id="PjxDTxjEUkLLtMAAMoDgUB" Ids="G7UoN6PrCjrM5XxJbKX6L1,Mh4aTJuFGPuNNtWoJSbh3x" />
         <Link Id="L9pYF8f9q9UMl7wYwdE9Sw" Ids="TUuClYMN1w8M3HczBH7neB,ONwnH6hogMUMln9RIP2bBJ" />
-        <Link Id="M9CGye5CODaOMNxMY8NpuL" Ids="EcxesQwQ7osMSfn05PEmyK,BMCHKSp2U7UN9dwiFmj7Ei" />
         <Link Id="Vr9nyjsEDABPzZ6goFtOJC" Ids="Borh38ZIR1dLwPL862By1Z,LQVJSY2xvwbPiDV1CyHLlR" />
         <Link Id="Fh44fCB6NR3OJHBEdizYNY" Ids="Hd4NGL97UN6LD6YOEgSgOU,B7FsADJeRwmPic77NIcywn" />
-        <Link Id="T7sV42Udg4ZM1bXp3vKf7V" Ids="BSQZ2mEjXzpO8kTs8RHtMn,JwYRdrp2ZfiPPqCKh7o2UM" />
         <Link Id="G9ISxRACOlNQG6KTnD1Zej" Ids="EJhpy3i72xxLqMLJXGL7L9,Ro2xHYWXAmvQCEDeGfNZh5" />
         <Link Id="PS5bqS1clSpLhd45rAg2XC" Ids="KACnLPsgsrGNXwmQFpqYLa,A33bL46vcacMJAd2JEyV15" />
         <Link Id="I3t1r3Ra4sYNbjli9ZcEC7" Ids="DlspuefeRoSPquoMJjsRCB,VvUuIWzAXi4OZ7VG8BaeXe" />
