@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="D3LFJ9nGPbcM4rxOv02goK" LanguageVersion="2019.2.0-0342-6bc9b61985" Version="0.128" IsTrusted="true">
+  <NugetDependency Id="P3rlpNsXzV6LnDlAiamLRv" Location="VL.CoreLib" Version="2019.2.0-0342-g6bc9b61985" />
+  <Patch Id="FKjnIaCAIkWNGwTxV5HG97">
+    <Canvas Id="QWS1FzkJxVWPbcSt0DqdKf" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="CPvXjOrGoXRL5ki7vbaau7">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="ODLOFQaW72ULKVLqWD9Q1j">
+        <Canvas Id="NtD6AOXOn7eNnlFhMJeKlW" CanvasType="Group">
+          <Node Bounds="414,168,44,19" Id="EWOEDLY9FymLst8YK93tXC">
+            <p:NodeReference LastCategoryFullName="IO.Midi" LastSymbolSource="VL.IO.Midi.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Midi" />
+              <Choice Kind="ProcessAppFlag" Name="MidiIn" />
+            </p:NodeReference>
+            <Pin Id="DDOStzZUHmtONT78iys3nQ" Name="Device" Kind="InputPin" />
+            <Pin Id="Dh1zooMzBCnLCRdyOwgyVw" Name="Result" Kind="OutputPin" />
+            <Pin Id="HcvcpU88N7uLes3virKnXC" Name="Is Open" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Ihu6K8EVCflNLOV6s0VkZd" Comment="Is Open" Bounds="456,209,40,19" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="LX54VYAc4hFLnBgFhmcH16" Comment="Device" Bounds="416,131,155,19" ShowValueBox="true" isIOBox="true" Value="Launch Control XL">
+            <p:TypeAnnotation LastCategoryFullName="IO.Midi" LastSymbolSource="VL.IO.Midi.vl">
+              <Choice Kind="TypeFlag" Name="MidiInputDevice" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="198,384,60,19" Id="VGan5XkODvjLt5qeIvOkl1">
+            <p:NodeReference LastCategoryFullName="IO.Midi" LastSymbolSource="VL.IO.Midi.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Midi" />
+              <Choice Kind="ProcessAppFlag" Name="ControllerState" />
+            </p:NodeReference>
+            <Pin Id="SfucNthkfqUPbdw18L8a60" Name="Value" Kind="InputPin" />
+            <Pin Id="FMixEv1PYewQHM8KQIbxnx" Name="Controller" Kind="InputPin" />
+            <Pin Id="HrToXQ1RKXDONH707OsaYU" Name="Result" Kind="OutputPin" />
+            <Pin Id="FzQ73ytggxVNJaVS3lpRJc" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LkTsxqyDwe7LUSUQIEJE6C" Comment="On Data" Bounds="296,423,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="570,435,89,19" Id="N44hxkw0GfJPkl3iMwq0l6">
+            <p:NodeReference LastCategoryFullName="IO.Midi" LastSymbolSource="VL.IO.Midi.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ControllersState" />
+            </p:NodeReference>
+            <Pin Id="HaPsyEWNb5SLxctxEtbGC5" Name="Value" Kind="InputPin" />
+            <Pin Id="RLDoe1lS682MwwayOUev4H" Name="Controllers" Kind="InputPin" />
+            <Pin Id="UIVWgKZZNbENZdnUZw5Jzi" Name="Result" Kind="OutputPin" />
+            <Pin Id="J8mcFD4eNn5NXQ7YvRPBns" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Overlay Id="TbfLIZ6oAKjNdHBxD9khiv" Name="Several Controllers" Bounds="485,300,379,297">
+            <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
+          </Overlay>
+          <Overlay Id="L4oj2CDD00NLjIagAjx4eP" Name="One particular Controller" Bounds="108,301,355,292">
+            <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
+          </Overlay>
+          <Pad Id="PmGDSsj7twePrHbmcwUSlY" Comment="Channels" Bounds="533,463,32,75" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="TqFhMbc9RlOO6iXCrwXn9E" Comment="On Data" Bounds="714,483,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RNXZb7WtEmuPZc8HhOcBGA" Comment="Controller" Bounds="279,364,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QzCCF7I0ZArLAw8XF59dWL" Comment="" Bounds="173,433,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DoNar2wk7zbQNRymbW3eiM" Comment="Spread of Controllers" Bounds="689,281,58,87" ShowValueBox="true" isIOBox="true" Value="0, 1, 2, 3">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="Fdb4fAeVYMPPVxGRskIRLs" Name="Create" />
+        <Patch Id="PyOHLjDx01hPxLvLPS4qbp" Name="Update" />
+        <ProcessDefinition Id="EOI3cSKKDTLMm4sleVMUV2">
+          <Fragment Id="ATz3q42f215LLRVLsZu4Uv" Patch="Fdb4fAeVYMPPVxGRskIRLs" Enabled="true" />
+          <Fragment Id="RlthKC2sfhLLJvSih1Orzs" Patch="PyOHLjDx01hPxLvLPS4qbp" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="I7H7L67citOQJZrCdkiLOp" Ids="HcvcpU88N7uLes3virKnXC,Ihu6K8EVCflNLOV6s0VkZd" />
+        <Link Id="RkS6eULf9v2L3UlvHcIUyg" Ids="LX54VYAc4hFLnBgFhmcH16,DDOStzZUHmtONT78iys3nQ" />
+        <Link Id="EAsTs1b5AvbLtUepDUEYtB" Ids="Dh1zooMzBCnLCRdyOwgyVw,SfucNthkfqUPbdw18L8a60" />
+        <Link Id="NOrXY5iNzWPPqslbDyUaoO" Ids="FzQ73ytggxVNJaVS3lpRJc,LkTsxqyDwe7LUSUQIEJE6C" />
+        <Link Id="MU9KPInjg8hPiPw7yXoeCQ" Ids="Dh1zooMzBCnLCRdyOwgyVw,HaPsyEWNb5SLxctxEtbGC5" />
+        <Link Id="Bpw9TlZFIp1PPZYCHRXmgl" Ids="J8mcFD4eNn5NXQ7YvRPBns,TqFhMbc9RlOO6iXCrwXn9E" />
+        <Link Id="TmcSxOUw1FDLjWOHgjp3M2" Ids="RNXZb7WtEmuPZc8HhOcBGA,FMixEv1PYewQHM8KQIbxnx" />
+        <Link Id="JiuuJt4N3C4NgIZMfHuad4" Ids="HrToXQ1RKXDONH707OsaYU,QzCCF7I0ZArLAw8XF59dWL" />
+        <Link Id="VVwNafTWR3ZP5A8q59wPbG" Ids="DoNar2wk7zbQNRymbW3eiM,RLDoe1lS682MwwayOUev4H" />
+        <Link Id="R3DzGZsOI1nLofZljnSp3Y" Ids="UIVWgKZZNbENZdnUZw5Jzi,PmGDSsj7twePrHbmcwUSlY" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="T2tK1On55VoLvznFVN7aby" Location="VL.IO.Midi" Version="2019.2.0-0342-g6bc9b61985" />
+</Document>

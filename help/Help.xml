@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Pack>
+	<Topic>
+		<VLDocument link="HowTo Know Your Device.vl" tags="" />
+		<VLDocument link="HowTo Bind Channels to MIDI via the Channel Browser.vl" tags="" />
+		<VLDocument link="HowTo Programmatically bind Channels to MIDI.vl" tags="" />
+		<VLDocument link="HowTo Play Notes.vl" tags="" />
+		<VLDocument link="HowTo React to Notes.vl" tags="" />
+		<VLDocument link="HowTo React to Controllers.vl" tags="" />
+		<VLDocument link="HowTo Play a .mid file.vl" tags="" />
+	</Topic>
+</Pack>

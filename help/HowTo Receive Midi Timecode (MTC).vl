@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="Gxtl0JNIdgcQEZSXhd27WI" LanguageVersion="2024.6.7" Version="0.128">
+  <NugetDependency Id="QUO0MByTnVtOGRUxZOwSWx" Location="VL.CoreLib" Version="2024.6.7" />
+  <Patch Id="PVAzKeAOOdyPGeSelukmXF">
+    <Canvas Id="DKwG3st1BUCPcOBmYGoOgq" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="B7nt6AFEiCUM79BHx9rF2T">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="LUMQ6WtqGMIMs6LBh7ymrL">
+        <Canvas Id="OgjSTTuM1v4N6kwU8BXLK7" CanvasType="Group">
+          <Node Bounds="372,285,44,19" Id="MTYOca796HoM37rpxgL86F">
+            <p:NodeReference LastCategoryFullName="IO.Midi" LastDependency="VL.IO.Midi.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MidiIn" />
+            </p:NodeReference>
+            <Pin Id="M6BsB1wY8OPQailgqg571N" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RKuqn9e2piaMYN4wLVp25t" Name="Device" Kind="InputPin" />
+            <Pin Id="CBOVaQFx20RNKgYKeDda1G" Name="Result" Kind="OutputPin" />
+            <Pin Id="TOGjPAsk6e5Mjq3gBhp6mL" Name="Is Open" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="372,333,82,19" Id="PLhyDABDFWuLWmQZY9yyqz">
+            <p:NodeReference LastCategoryFullName="IO.Midi" LastDependency="VL.IO.Midi.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MidiTimeCode" />
+            </p:NodeReference>
+            <Pin Id="IcierLfzdhaQKgZpOUUV8n" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LSnTvec0a6vPiR3CBRTImp" Name="Input" Kind="InputPin" />
+            <Pin Id="P4ShGHCQh51PW5e46SnbQZ" Name="Time" Kind="OutputPin" />
+            <Pin Id="HD18LEamMm3PlmUv5n49tT" Name="Frames" Kind="OutputPin" />
+          </Node>
+          <Pad Id="PKurub86TmwNZ9jc55nuFb" Comment="Time" Bounds="374,401,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DGwwyD8bDAvLl6qkvT0aii" Comment="Frames" Bounds="456,401,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NzqwzcZrZOOLnBfgLbjxpM" Comment="Device" Bounds="374,251,109,15" ShowValueBox="true" isIOBox="true" Value="No input device found">
+            <p:TypeAnnotation LastCategoryFullName="IO.Midi" LastDependency="VL.IO.Midi.vl">
+              <Choice Kind="TypeFlag" Name="MidiInputDevice" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="CmA5ovUzmFqPPo0c23354G" Name="Create" />
+        <Patch Id="FEbCMoH7eRTLwauUNpITHZ" Name="Update" />
+        <ProcessDefinition Id="JAUEmM81FVNLNalaXV8YLN">
+          <Fragment Id="NlUvdRfWksoMqXz7UGAatj" Patch="CmA5ovUzmFqPPo0c23354G" Enabled="true" />
+          <Fragment Id="S0CmDjRh6MUPZR1sE48E3P" Patch="FEbCMoH7eRTLwauUNpITHZ" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="OLLBDUzdSpML4rWbxSTpsU" Ids="CBOVaQFx20RNKgYKeDda1G,LSnTvec0a6vPiR3CBRTImp" />
+        <Link Id="IDieVlP4QA0Oi1rR3b3AQ1" Ids="P4ShGHCQh51PW5e46SnbQZ,PKurub86TmwNZ9jc55nuFb" />
+        <Link Id="EyB7MYACwIkQTTrrNi3dzu" Ids="HD18LEamMm3PlmUv5n49tT,DGwwyD8bDAvLl6qkvT0aii" />
+        <Link Id="S4TI6n4RSzVODChuzIND7M" Ids="NzqwzcZrZOOLnBfgLbjxpM,RKuqn9e2piaMYN4wLVp25t" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="GjQAcbgT9Z2NXGOXsCbM5r" Location="VL.IO.Midi" Version="0.0.0" />
+</Document>
