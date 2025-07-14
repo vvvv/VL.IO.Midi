@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SdVSPN0SORmPLYzCFV143y" LanguageVersion="2025.7.0-0410-gbe81663f6d" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SdVSPN0SORmPLYzCFV143y" LanguageVersion="2025.7.0-0420-gfa71002a1a" Version="0.128">
   <NugetDependency Id="I8QQd3d6IwrPHKZpya237S" Location="VL.CoreLib" Version="2023.5.1-0059-g8adb3ebf6c" />
   <Patch Id="NFmLzJZSFpnQJ1Wsryp0ze">
     <Canvas Id="Sy6K0E9lhbSPdxrL0FnkFq" DefaultCategory="IO.Midi.Modules" CanvasType="FullCategory">
@@ -520,19 +520,6 @@
                 </Node>
                 <ControlPoint Id="MsmH58z1kciPR0kO0rfJqd" Bounds="973,493" />
                 <Patch Id="FTYE1pfExOzN8aAZS8jN5o" Name="Dispose" />
-                <Node Bounds="867,1116,85,19" Id="MdVAatvC2sDNLAntHtqEM4">
-                  <p:NodeReference LastCategoryFullName="ImGui.Styling" LastDependency="VL.ImGui.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <FullNameCategoryReference ID="ImGui.Styling" />
-                    <Choice Kind="ProcessNode" Name="SetTextStyle" />
-                  </p:NodeReference>
-                  <Pin Id="OVctPdGIhxrLphR9uOv1ZY" Name="Input" Kind="InputPin" />
-                  <Pin Id="INGdl6KhlTIOmtkFsnbSEX" Name="Color" Kind="InputPin" DefaultValue="0.14500004, 0.58000016, 0.44950014, 1" />
-                  <Pin Id="FcxZ8q1IH9XNDQPDkGpbZI" Name="Disabled Color" Kind="InputPin" />
-                  <Pin Id="VfTF8OVPcuZOzCQharalPH" Name="Selected Text Background" Kind="InputPin" />
-                  <Pin Id="GiWTnvW3OpdNh6zOTd52yb" Name="Font Name" Kind="InputPin" />
-                  <Pin Id="Tuks6UbwsN9OGnuTmVfgIf" Name="Output" Kind="OutputPin" />
-                </Node>
                 <Node Bounds="574,1219,65,19" Id="VNrSTOoxiX7O5fo1JbJiWg">
                   <p:NodeReference LastCategoryFullName="ImGui.Widgets" LastDependency="VL.ImGui.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -570,18 +557,18 @@
                   <Pin Id="PdqZaaItS2SOziWdjSRnL9" Name="Binding Type" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="628,603,55,19" Id="SVZ2j2ZmVSxLn2bs6RfmZb">
-                  <p:NodeReference LastCategoryFullName="Reactive.ChannelHub.Modules.BindingType" LastDependency="VL.CoreLib.vl">
+                  <p:NodeReference LastCategoryFullName="Application.ChannelHub.Modules.BindingType" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <FullNameCategoryReference ID="Reactive.ChannelHub.Modules.BindingType" />
+                    <CategoryReference Kind="EnumType" Name="BindingType" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Receives" />
                   </p:NodeReference>
                   <Pin Id="FTSY8Vt4HgAQPP6c2jtRKT" Name="Input" Kind="StateInputPin" />
                   <Pin Id="CXWx2kR68S0NDaMweSBoKx" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="629,844,43,19" Id="TGOAc4aDFPJPypk9Q7e1Kq">
-                  <p:NodeReference LastCategoryFullName="Reactive.ChannelHub.Modules.BindingType" LastDependency="VL.CoreLib.vl">
+                  <p:NodeReference LastCategoryFullName="Application.ChannelHub.Modules.BindingType" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <FullNameCategoryReference ID="Reactive.ChannelHub.Modules.BindingType" />
+                    <CategoryReference Kind="EnumType" Name="BindingType" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Sends" />
                   </p:NodeReference>
                   <Pin Id="UkKp3BeORzcMV31uzh0gxF" Name="Input" Kind="StateInputPin" />
