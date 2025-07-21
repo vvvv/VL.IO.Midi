@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UuOF5GIp0NVMeqwSiW6l43" LanguageVersion="2025.7.0-0420-gfa71002a1a" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="UuOF5GIp0NVMeqwSiW6l43" LanguageVersion="2025.7.0-ras-0003-g54b170e7b9" Version="0.128">
   <NugetDependency Id="SKLNQVfmuYYMk70XvfHymv" Location="VL.CoreLib" Version="2025.7.0-0360-g908a776915" />
   <Patch Id="FbH2itTZPkOLJbHcg75vFI">
     <Canvas Id="AjaSczihyLcLbvQX4iX9KS" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -267,7 +267,7 @@
           <Node Bounds="715,790,105,19" Id="IbdmV4TiuqLMX9AzVq7YxI">
             <p:NodeReference LastCategoryFullName="IO.Midi" LastDependency="VL.IO.Midi.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="BindToMIDI" />
+              <Choice Kind="ProcessAppFlag" Name="BindToMidi" />
             </p:NodeReference>
             <Pin Id="DuYqBdzqodhPYyJEmJxArl" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Idaz3tahFYtPy3wJrKhNOU" Name="Input" Kind="InputPin" />
