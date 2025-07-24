@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Jynpo0iYAYaNdMJ3Fwpxdi" LanguageVersion="2025.7.0-0398-gdabf618629" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Jynpo0iYAYaNdMJ3Fwpxdi" LanguageVersion="2025.7.0-0420-g322b645848" Version="0.128">
   <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2024.6.0-0244-ga4b76baedd" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.Midi.Modules.Experimental" CanvasType="FullCategory">
@@ -219,9 +219,9 @@
               </p:NodeReference>
               <Pin Id="MfatmTiGRi1N3hyKcq2UYk" Name="Model Stream" Kind="InputPin" />
               <Pin Id="KcBsWPx0OUmLnqcPcJmU0p" Name="Node Context" Kind="InputPin" />
-              <Pin Id="S6zkIcFCysZNh08419xzfg" Name="Save on Exit Action" Kind="InputPin" />
               <Pin Id="VZlHEjoefyCOr6uAjfNx7B" Name="Enabled" Kind="InputPin" />
               <Pin Id="H8YZxfJXlUpNguuXSYaBAy" Name="Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="NXYhHse2IFAOdq0Qkw58OL" Name="Pin Name" Kind="InputPin" />
             </Node>
             <ControlPoint Id="JPTWPz25znOPZBzIXrUlyT" Bounds="245,143" />
             <ControlPoint Id="TO4LQMA6eO2MLVKuRsHtlu" Bounds="273,249" />
@@ -981,6 +981,7 @@
                   <Pin Id="BOV8sQ80efnNbJk7h6FosA" Name="Type Of Values" Kind="InputPin" />
                   <Pin Id="DyfkU7URL89QL4lQCvSuMW" Name="Result" Kind="OutputPin" />
                   <Pin Id="VfnHPFxj8kOP44AW25AghY" Name="Got Created" Kind="OutputPin" />
+                  <Pin Id="VbanYEbdbAPQdUtf3HuNLV" Name="Type Changed" Kind="OutputPin" />
                 </Node>
                 <Link Id="IODEd9kYIMaPVgzwiKuPlm" Ids="DvVKWvVyzhhMLIjmeDq0p2,EB4uNKAKYdtML9tBvWyHku" />
                 <Link Id="R9NYsgoSCaKMlQMvxg6O8p" Ids="BPENCioHZcUNLg09O7L0dx,HZBBmMWIvcoPNbcgus7AKE" />
@@ -1704,6 +1705,5 @@
       </Patch>
     </Node>
   </Patch>
-  <DocumentDependency Id="D6GpLplfeNwPQ516VRGLes" Location="./ModelUtils.vl" />
   <DocumentDependency Id="LGUvanOpj5vNLPy3ZE3xX6" Location="./VL.IO.Midi.vl" />
 </Document>
