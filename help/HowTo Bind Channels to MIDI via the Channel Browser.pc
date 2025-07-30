@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PublicChannels>
+  <Channel Name="bool" Type="Boolean [Primitive]" />
+  <Channel Name="float" Type="Float32 [Primitive]" />
+  <Channel Name="int" Type="Integer32 [Primitive]" />
+</PublicChannels>
