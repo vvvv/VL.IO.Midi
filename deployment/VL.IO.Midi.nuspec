@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.Midi</id>
-    <version>2.0.4</version>
+    <version>2.0.5</version>
     <title>VL.IO.Midi</title>
     <authors>vvvv, Leslie Sanford, Randall Vásquez</authors>
     <owners>vvvv</owners>
