@@ -16,7 +16,7 @@
     <OutputPath>..\lib\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Sanford.Multimedia.Midi" Version="6.7.1" />
+    <PackageReference Include="Sanford.Multimedia.Midi" Version="6.7.3" />
     <PackageReference Include="VL.CoreLib" Version="2023.5.0" />
   </ItemGroup>
   <ItemGroup>

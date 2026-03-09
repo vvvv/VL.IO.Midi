@@ -14,7 +14,7 @@
 	<icon>icon\nugeticon.png</icon>
 	<dependencies>
       <group targetFramework="net8.0">
-        <dependency id="Sanford.Multimedia.Midi" version="6.7.1" />
+        <dependency id="Sanford.Multimedia.Midi" version="6.7.3" />
         <dependency id="managed-midi" version="1.10.1" />
       </group>
     </dependencies>
